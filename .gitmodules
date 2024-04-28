@@ -1,0 +1,3 @@
+[submodule "Wordle"]
+	path = Wordle
+	url = https://github.com/Fsepehrpour/Wordle.git
