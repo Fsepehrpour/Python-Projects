@@ -10,12 +10,13 @@ def validate_input(user_guess):
         return False
     return True
 
-def main ():
+def main():
     rand_num = random.randint(1,100)
     score = 100
+    attempts = 0
 
     while True:
-        user_guess = input('Enter a number between 1 and 100 (or q to quit): ')
+        user_guess = input(f'Enter a number between 1 and 100 (or q to quit). Number of attempts so far: {attempts} ')
 
 
         if user_guess.lower() == 'q':
@@ -28,6 +29,7 @@ def main ():
         user_guess = int(user_guess)
         if rand_num > user_guess:
             print('Your guess is lower than the answer. Please try agian!')
+            attempts += 1
             score -= 10
             score = max(score, 0)
             if score == 0:
@@ -42,6 +44,7 @@ def main ():
                     continue
         elif rand_num < user_guess:
             print('Your guess is higher than the answer. Please try again! ')
+            attempts += 1
             score -=10
             score = max(score, 0)
             if score == 0:
