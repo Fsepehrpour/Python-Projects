@@ -1,4 +1,5 @@
 # Number Guesser Game 
+![Game Image](./guess-the-number.png)
 
 ## Overview
 This is a game that generates a random number between 1 and 100, and the user is prompted to guess this number. For each incorrect guess, the user receives a hint and their score is reduced.
