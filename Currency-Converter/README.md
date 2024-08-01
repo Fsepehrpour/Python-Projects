@@ -1,4 +1,5 @@
 # Currency Converter
+![app image](./currency-converter.png)
 This Python project allows users to convert currencies using real-time exchange rates from the ExchangeRate-API. It includes a command-line interface (CLI) and a graphical user interface (GUI) built with Streamlit.
 
 ## Features
