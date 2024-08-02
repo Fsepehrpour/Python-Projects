@@ -1,4 +1,4 @@
-![project image](./project-image.png)
+![project image](./images/project-image.png)
 # Rock, Paper, Scissors Game
 
 This Python implementation of the classic "Rock, Paper, Scissors" game offers a fun and interactive way to play against the computer. The program uses simple logic and Python's random module to create an engaging user experience.
