@@ -10,6 +10,7 @@ rock-paper-scissors/
 ├── src/
 │   ├── game.py - the main game class
 │
+├── images
 └── README.md
 ````
 ## Requirements
