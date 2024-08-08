@@ -1,5 +1,5 @@
 # Rock, Paper, Scissors Game
-## OOP Approach
+### OOP Approach
 
 This directory contains a Python implementation of the Rock, Paper, Scissors game using an object-oriented approach.
 
