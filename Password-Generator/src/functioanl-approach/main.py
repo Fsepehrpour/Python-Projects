@@ -13,9 +13,9 @@ def pin_code_generator(number_of_digits: int = 6) -> str:
   """
   Generate a numeric pincode.
   """
-    digits = string.digits
-    pincode = ''.join([random.choice(digits) for i in range(number_of_digits)])
-    return pincode
+  digits = string.digits
+  pincode = ''.join([random.choice(digits) for i in range(number_of_digits)])
+  return pincode
 
 def test_pin_generator():
     pin = pin_code_generator(4)
@@ -67,4 +67,50 @@ def test_random_password_generator():
         print("Test passed!")
 
 
+def memorable_pass_generator(no_of_words: int = 3,
+                            separator: str = '-',
+                            capitalization: bool = False,
+                            vocabulary: Optional[List[str]] = None) -> str:
+    if vocabulary is None:
+        vocabulary = nltk.corpus.words.words()
+    password_words = [random.choice(vocabulary) for _ in range(no_of_words)]
+    if capitalization:
+        password_words = [random.choice([word.capitalize(), word.lower()]) for word in password_words]
+    password = separator.join(password_words)
+    return password
 
+
+def test_memorable_password_generator():
+    with patch('random.choice') as mock_choice:
+        # Mock return values for the vocabulary choices and capitalization
+        mock_choice.side_effect = [
+            'apple', 'banana', 'cherry', 'date',  # First set of calls to random.choice for word selection
+            'apple', 'Banana', 'cherry', 'Date'   # Second set of calls for capitalization
+        ]
+
+        # Generate the password
+        password = memorable_pass_generator(4, '-', True)
+
+        # Check the structure of the generated password
+        print("Generated Password:", password)
+        assert len(password.split('-')) == 4
+
+        # Extract words
+        words = password.split('-')
+        # Check that some words are capitalized and some are not
+        assert words == ['apple', 'Banana', 'cherry', 'Date']
+
+        print("Test passed!")
+
+
+def main():
+    print("Testing Random Password Generator:")
+    test_random_password_generator()
+    print("Testing Memorable Password Generator:")
+    test_memorable_password_generator()
+    print("Testing Pincode Generator:")
+    test_pin_generator()
+
+
+if __name__ == "__main__":
+    main()
