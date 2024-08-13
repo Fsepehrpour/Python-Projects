@@ -7,7 +7,7 @@ This repository contains two distinct approaches to generating different types o
 ```
 .
 └── src/
-    ├── OOP-approach-solution/
+    ├── OOP-approach/
     │   ├── main.py
     │   └── README.md
     └── functional-approach/
