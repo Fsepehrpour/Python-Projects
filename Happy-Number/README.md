@@ -10,10 +10,12 @@ For example, 19 is a happy number. Here's why:
 This script provides a simple function `is_happy(num: int) -> bool` that checks whether a given number is happy.
 
 ## Project Structure
+```
 .
 ├── src/
 │    └── main.py
 └── README.md
+```
 
 ## Requirements
 * Python 3.7+
