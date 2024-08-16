@@ -1,2 +1,2 @@
-![Monty Hall](banner.png)
+![Monty Hall](images/banner.png)
 # Monty Hall Game Simulation
