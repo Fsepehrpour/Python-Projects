@@ -1,1 +1,1 @@
-![monty hall]('banner.jpeg)
+![monty hall]('./banner.jpeg)
