@@ -1,1 +1,1 @@
-![repo image](images/banner.png)
+<img src="images/banner.png" width="300" height="200">
