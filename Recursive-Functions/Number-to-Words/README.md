@@ -11,7 +11,7 @@ Due to the irregularities in the English language, the conversion of numbers is 
 
 ## `num_to_word` Function
 this function is the core of this project which takes an integer and returns its numeral version as a string. The function is implemented as follows:
-```
+```python
 def num_to_word(num: int) -> str:
     if num < 20:
         # Direct mapping for numbers less than 20
