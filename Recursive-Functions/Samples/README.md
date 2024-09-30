@@ -33,9 +33,24 @@ This subrepository contains a collection of Python scripts demonstrating common 
  * Description: Calculates the sum of the first n natural numbers.
  * Example: `sum_natural_number(5)` returns `15`.
 
- ##How to Use
-Clone the repository and navigate to the Samples directory:
+ ## How to Use
+1. Clone the repository and navigate to the Samples directory:
+
 ```python
-git clone Recursive-Functions/Samples
+git clone https://github.com/Fsepehrpour/Python-Projects/tree/main/Recursive-Functions/Samples
+cd Recursive_Functions/Samples
+```
+2. Run any of the scripts with Python:
+
+```python
+python factorial.py
+python fibonacci.py
+```
+
+## Contributing
+Feel free to contribute additional recursive functions or improvements via pull requests!
+
+
+
 
 
