@@ -36,8 +36,6 @@ This subrepository contains a collection of Python scripts demonstrating common 
  ##How to Use
 Clone the repository and navigate to the Samples directory:
 ```python
-git clone https://github.com/your-username/Recursive_Functions.git
-cd Recursive_Functions/Samples
-
+git clone Recursive-Functions/Samples
 
 
